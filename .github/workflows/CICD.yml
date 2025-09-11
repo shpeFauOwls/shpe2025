@@ -1,0 +1,78 @@
+name: React CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout repo
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up Node.js with built-in caching
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: package-lock.json  
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm ci
+
+      # Run linter if we have one
+      - name: Lint
+        run: npm run lint --if-present
+
+      # Run tests if we have them
+      - name: Test
+        run: npm test --if-present
+
+      # Build app to ensure it compiles
+      - name: Build
+        run: npm run build
+
+      # Upload build output as artifact for deployment job
+      - name: Upload production build
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-build
+          path: dist
+
+  deploy:
+  # only runs on PR's
+    if: github.event_name == 'pull_request'
+  # runs only after build is done
+    needs: build
+    runs-on: ubuntu-latest
+  # prod enviorenment for Manual User review
+  # NEED TO SET UP
+    environment: production   
+    steps:
+    #Retrieves the build from our last step
+      - name: Download build
+        uses: actions/download-artifact@v4
+        with:
+          name: production-build
+          path: dist
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+    # Invoke FirebaseCLI to deploy ONLY HOSTING
+      - name: Deploy to Firebase Hosting
+        uses: w9jds/firebase-action@v13.6.0
+        with:
+          args: deploy --only hosting --project ${{ secrets.FIREBASE_PROJECT_ID }}
+    # Secrets kept in eviornment
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
