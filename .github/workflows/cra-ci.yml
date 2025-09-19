@@ -1,18 +1,43 @@
 name: CRA CI
 on:
-  pull_request: { branches: [dev, main] }
-  push: { branches: [dev] }
+  pull_request:
+    branches: [dev, main]
+  push:
+    branches: [dev]
 
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with: { node-version: 20, cache: npm }
-      - run: npm ci
-      - run: npm run lint --if-present
-      - run: CI=true npm test -- --passWithNoTests
-      - run: npm run build
-      - uses: actions/upload-artifact@v4
-        with: { name: cra-build, path: build }
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install deps
+        # Use npm ci only if you have package-lock.json; switch to npm install otherwise
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
+
+      - name: Lint (optional)
+        run: npm run lint --if-present
+
+      - name: Test (allow no tests)
+        run: CI=true npm test -- --watchAll=false --passWithNoTests
+
+      - name: Build
+        run: npm run build
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cra-build
+          path: build
