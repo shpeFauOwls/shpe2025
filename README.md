@@ -45,33 +45,73 @@ src/
 
 ## 🛠️ Getting Started
 
-### Prerequisites
+### Dockerized Development
 
-* Node.js v16–20 recommended (CRA supports Node ≥14)
-* npm (comes with Node)
+We have a diverse group of contributors, and each has a different setup (e.g., Mac, Windows, Linux). To ensure a consistent runtime environment for everyone, we've added Docker files to facilitate setup.
 
-### Installation
+#### Prerequisites
+
+* [Docker](https://www.docker.com)
+* [Node](https://nodejs.org/en) (v22)
+
+Even though the app runs in Docker, you may want to install Node for editor integration (e.g., for autocompletion, linting, or type checking).
+
+#### Installation
 
 ```bash
 npm install
 ```
 
-### Run (Development)
+Installing Node and running `npm install` locally ensures that your editor recognizes all dependencies and provides better development tooling.
+
+#### Run (Development)
+To start the container/app:
+```bash
+docker compose up
+```
+
+Use the `-d` flag to run in the background and check the logs with:
+```bash
+docker compose logs -f
+```
+
+Stop/delete container:
+```bash
+docker compose down
+```
+
+### Running Locally
+
+You can run the app directly on your machine without Docker. However, using Docker is recommended to avoid environment inconsistencies.
+
+#### Prerequisites
+
+* [Node.js](https://nodejs.org/en) (v22 recommended; Node v16–20 work; CRA supports Node ≥14).
+  * `npm`: It comes with Node.
+* [`nvm`](https://github.com/nvm-sh/nvm) (optional): You can run `nvm use` to ensure you have the same Node version installed.
+
+#### Installation
+
+```bash
+npm install
+```
+
+#### Run (Development)
 
 ```bash
 npm start
 ```
 
-* Runs at **[http://localhost:3000](http://localhost:3000)**
-* Supports hot reload
+* Runs at **[http://localhost:3000](http://localhost:3000)**.
+* Supports hot reload.
 
-### Build (Production)
+#### Build (Production)
 
 ```bash
 npm run build
 ```
 
-* Outputs static site into `build/`
+* Outputs static site into `build/`.
 
 ---
 
