@@ -290,7 +290,7 @@ createRoot(document.getElementById('root')).render(
 
 ---
 
-## 📦 Deployment (Optional: Firebase Hosting)
+## 📦 Deployment (Firebase Hosting)
 
 1. Install Firebase CLI:
 
