@@ -46,7 +46,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16 px-4 sm:px-6 lg:px-8">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            + <img src={logo} alt="SHPE FAU" className="h-7 object-contain" />
+            <img src={logo} alt="SHPE FAU" className="h-12 object-contain" />
 
           </Link>
 
