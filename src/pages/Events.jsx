@@ -154,12 +154,22 @@ const Events = () => {
               Don't miss out on our upcoming events! Follow us on social media and check back regularly for updates.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-shpe-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200">
-                Join Our Mailing List
-              </button>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-shpe-blue transition-colors duration-200">
+              <a
+                href="https://chat.whatsapp.com/EXyD31DYkULLQeoyziiZgq?mode=ems_copy_c"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-shpe-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
+              >
+                Join Our Community
+              </a>
+              <a
+                href="https://www.instagram.com/shpe_fau/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-shpe-blue transition-colors duration-200"
+              >
                 Follow Us
-              </button>
+              </a>
             </div>
           </div>
         </Section>
