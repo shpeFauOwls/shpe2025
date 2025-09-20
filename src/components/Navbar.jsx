@@ -3,7 +3,7 @@ import { Link, useLocation,useNavigate } from 'react-router-dom';
 import Button from './Button';
 import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../lib/supabase';
-
+import logo from "../assets/logo.png"
 const Navbar = () => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
@@ -46,10 +46,8 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16 px-4 sm:px-6 lg:px-8">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-shpe-blue rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">SHPE</span>
-            </div>
-            <span className="text-xl font-bold text-gray-900">SHPE FAU</span>
+            + <img src={logo} alt="SHPE FAU" className="h-7 object-contain" />
+
           </Link>
 
           {/* Desktop Navigation */}
