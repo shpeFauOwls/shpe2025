@@ -16,7 +16,6 @@ const Home = () => {
         <AboutSection />
         <StatsSection />
         <EventsSection />
-        <CTASection />
       </main>
       <Footer />
     </div>
