@@ -1,0 +1,27 @@
+[
+  {
+    "q": "What is SHPE at FAU?",
+    "a": "SHPE FAU is the Society of Hispanic Professional Engineers chapter at Florida Atlantic University. We host events, mentorship, and career growth programs open to all majors.",
+    "keywords": ["what is shpe", "about shpe", "mission", "chapter", "fau"]
+  },
+  {
+    "q": "How do I join?",
+    "a": "Attend a GBM, fill out our interest form, and join the Discord. Details and links are on the Home and Contact pages.",
+    "keywords": ["join", "membership", "sign up", "how to join", "become a member"]
+  },
+  {
+    "q": "When are meetings?",
+    "a": "General Body Meetings are typically biweekly during the semester. Check the Events page and Discord announcements for exact dates.",
+    "keywords": ["meeting", "gbm", "schedule", "events", "calendar"]
+  },
+  {
+    "q": "How do points and the leaderboard work?",
+    "a": "You earn points by attending events and participating in programs. The leaderboard (coming soon) will display top contributors each semester.",
+    "keywords": ["points", "leaderboard", "rewards", "ranking"]
+  },
+  {
+    "q": "How can companies sponsor SHPE FAU?",
+    "a": "We’d love to connect! Reach out via the Contact page or email the board. We’ll share our sponsorship packet and next steps.",
+    "keywords": ["sponsor", "partner", "company", "donate", "funding"]
+  }
+]
