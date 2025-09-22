@@ -10,6 +10,7 @@ import Resources from './pages/Resources';
 import Sponsors from './pages/Sponsors';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
+import ShpeBotWidget from './components/ShpeBotWidget';
 
 import SignIn from './pages/SignIn';
 import ResetPassword from './pages/ResetPassword';
@@ -40,6 +41,7 @@ function App() {
           {/* Fallback to home */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
+        <ShpeBotWidget/>
       </div>
     </Router>
   );
