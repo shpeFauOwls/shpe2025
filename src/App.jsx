@@ -11,6 +11,7 @@ import Sponsors from './pages/Sponsors';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import ShpeBotWidget from './components/ShpeBotWidget';
+import Leaderboard from './pages/Leaderboard';
 
 import SignIn from './pages/SignIn';
 import ResetPassword from './pages/ResetPassword';
