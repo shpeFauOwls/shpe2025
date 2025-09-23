@@ -20,7 +20,7 @@ const Navbar = () => {
     { name: 'Resources', path: '/resources' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'Contact', path: '/contact' },
-    { name: 'Join Now', path: '/signin?mode=join' }, // <-- changed from /join-now
+    { name: 'Leaderboard', path: '/leaderboard' }, // <-- changed from /join-now
   ];
 
   const isActive = (path) => {
