@@ -31,7 +31,7 @@ function App() {
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
-
+          <Route path="/leaderboard" element={<Leaderboard />} />
           {/* Redirect old Join page to account creation */}
           <Route path="/join-now" element={<Navigate to="/signin?mode=signup" replace />} />
 
