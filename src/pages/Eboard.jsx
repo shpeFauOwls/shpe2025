@@ -120,24 +120,6 @@ const Eboard = () => {
           </div>
         </Section>
         
-        <Section>
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Join Our Leadership Team
-            </h2>
-            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Interested in taking on a leadership role? We're always looking for passionate members to join our executive board and help shape the future of SHPE FAU.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-primary">
-                Apply for Position
-              </button>
-              <button className="btn-secondary">
-                Learn More
-              </button>
-            </div>
-          </div>
-        </Section>
       </main>
       <Footer />
     </div>

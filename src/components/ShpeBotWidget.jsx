@@ -159,7 +159,7 @@ export default function ShpeBotWidget() {
         className="fixed bottom-4 right-4 z-50 h-14 w-14 rounded-full shadow-lg ring-1 ring-black/5 bg-white dark:bg-slate-900 flex items-center justify-center hover:scale-105 transition-transform"
       >
         <img
-          src="/brand/shpe-logo.svg"
+          src="/src/assets/logo.svg"
           alt="SHPE logo"
           className="h-8 w-8"
         />
