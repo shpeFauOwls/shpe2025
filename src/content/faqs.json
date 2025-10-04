@@ -1,27 +1,52 @@
 [
   {
     "q": "What is SHPE at FAU?",
-    "a": "SHPE FAU is the Society of Hispanic Professional Engineers chapter at Florida Atlantic University. We host events, mentorship, and career growth programs open to all majors.",
-    "keywords": ["what is shpe", "about shpe", "mission", "chapter", "fau"]
+    "a": "SHPE FAU is the Society of Hispanic Professional Engineers chapter at Florida Atlantic University. We host events, mentorship, projects, and career growth programs open to all majors.",
+    "keywords": ["what is shpe", "about", "mission", "chapter", "fau"]
   },
   {
     "q": "How do I join?",
-    "a": "Attend a GBM, fill out our interest form, and join the Discord. Details and links are on the Home and Contact pages.",
-    "keywords": ["join", "membership", "sign up", "how to join", "become a member"]
+    "a": "Come to a GBM, fill out our interest form, and join our Discord + WhatsApp. Details are on the Home and Contact pages.",
+    "keywords": ["join", "membership", "sign up", "become member"]
   },
   {
     "q": "When are meetings?",
-    "a": "General Body Meetings are typically biweekly during the semester. Check the Events page and Discord announcements for exact dates.",
+    "a": "General Body Meetings are typically biweekly during the semester. Check the Events page (Google Calendar) and Discord announcements for dates.",
     "keywords": ["meeting", "gbm", "schedule", "events", "calendar"]
   },
   {
+    "q": "Discord / WhatsApp links?",
+    "a": "Discord is posted in our Contact page and pinned messages. WhatsApp invite: https://chat.whatsapp.com/EXyD31DYkULLQeoyziiZgq?mode=ems_copy_c",
+    "keywords": ["discord", "whatsapp", "chat", "group"]
+  },
+  {
     "q": "How do points and the leaderboard work?",
-    "a": "You earn points by attending events and participating in programs. The leaderboard (coming soon) will display top contributors each semester.",
+    "a": "Earn points by attending events and participating in programs. The Leaderboard (coming soon) will show top contributors each semester.",
     "keywords": ["points", "leaderboard", "rewards", "ranking"]
   },
   {
     "q": "How can companies sponsor SHPE FAU?",
-    "a": "We’d love to connect! Reach out via the Contact page or email the board. We’ll share our sponsorship packet and next steps.",
+    "a": "We’d love to connect! Reach out via the Contact page or email the board. We’ll share our sponsorship package and next steps.",
     "keywords": ["sponsor", "partner", "company", "donate", "funding"]
+  },
+  {
+    "q": "How do I volunteer or join the leadership team?",
+    "a": "We post openings in Discord/WhatsApp and at GBMs. Talk to any E-Board member or message us via Contact.",
+    "keywords": ["leadership", "lead", "officer", "chair", "volunteer"]
+  },
+  {
+    "q": "Where can I find resources to learn?",
+    "a": "Check the Resources page for guides, workshops, and repos. We also run tech talks (APIs, Docker, security) — watch Discord for dates.",
+    "keywords": ["resources", "learn", "workshop", "slides", "repo"]
+  },
+  {
+    "q": "Resume night / mock interviews?",
+    "a": "Yes — we host resume reviews and mock interviews during recruiting seasons. Join Discord to RSVP.",
+    "keywords": ["resume", "interview", "career", "recruiting"]
+  },
+  {
+    "q": "Hackathons and CTFs?",
+    "a": "We organize build nights and CTF practice. Look out for announcements in Discord.",
+    "keywords": ["hackathon", "ctf", "competition", "practice"]
   }
 ]
