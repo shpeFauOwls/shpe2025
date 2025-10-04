@@ -4,7 +4,7 @@ import logo from "../assets/logo.svg" //change from the place holder value to th
 
 const Footer = () => {
   const quickLinks = [
-    { name: 'About Us', path: '/about' },
+    { name: 'Contact', path: '/contact' },
     { name: 'E-Board', path: '/eboard' },
     { name: 'Events', path: '/events' },
     { name: 'Resources', path: '/resources' },
@@ -13,7 +13,7 @@ const Footer = () => {
   const getInvolvedLinks = [
     { name: 'Join SHPE', path: '/join' },
     { name: 'Become a Sponsor', path: '/sponsors' },
-    { name: 'Volunteer', path: '/volunteer' },
+    { name: 'Leaderboard', path: '/leaderboard' },
     { name: 'Gallery', path: '/gallery' },
   ];
   
@@ -87,7 +87,6 @@ const Footer = () => {
                <img src="/images/social/whatsapp.svg" alt="WhatsApp" className="h-6 w-6" />
                </a>
               </div>
-              <p className="text-gray-300 text-sm">shpe@fau.edu</p>
             </div>
           </div>
         </div>

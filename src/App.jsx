@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import Home from './pages/Home';
-import About from './pages/About';
 import Eboard from './pages/Eboard';
 import DevTeam from './pages/DevTeam';
 import Events from './pages/Events';
@@ -23,7 +22,6 @@ function App() {
         <Routes>
           {/* Public routes */}
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
           <Route path="/eboard" element={<Eboard />} />
           <Route path="/devteam" element={<DevTeam />} />
           <Route path="/events" element={<Events />} />
@@ -31,7 +29,7 @@ function App() {
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
-
+          <Route path="/leaderboard" element={<Leaderboard />} />
           {/* Redirect old Join page to account creation */}
           <Route path="/join-now" element={<Navigate to="/signin?mode=signup" replace />} />
 
