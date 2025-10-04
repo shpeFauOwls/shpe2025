@@ -137,14 +137,14 @@ export default function ShpeBotWidget() {
     setTimeout(() => {
       setMessages(prev => [...prev, { role: "bot", text: reply }]);
       setBusy(false);
-    }, 200);  // small delay to simulate thinking
+    }, 400);  // small delay to simulate thinking
   };
 
   const clearChat = () => {
     setMessages([
       {
         role: "bot",
-        text: "Cleared. Ask about joining, events, points, or sponsorships."
+        text: "Cleared. Do you have any questions ask about joining, events, points, or sponsorships."
       }
     ]);
   };
@@ -159,9 +159,9 @@ export default function ShpeBotWidget() {
         className="fixed bottom-4 right-4 z-50 h-14 w-14 rounded-full shadow-lg ring-1 ring-black/5 bg-white dark:bg-slate-900 flex items-center justify-center hover:scale-105 transition-transform"
       >
         <img
-          src="/src/assets/logo.svg"
+          src="../assets/logo.png"
           alt="SHPE logo"
-          className="h-8 w-8"
+          className="h-4 w-4"
         />
       </button>
 
