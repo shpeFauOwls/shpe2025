@@ -158,11 +158,7 @@ export default function ShpeBotWidget() {
         aria-label="Open SHPEbot chat (Alt+B)"
         className="fixed bottom-4 right-4 z-50 h-14 w-14 rounded-full shadow-lg ring-1 ring-black/5 bg-white dark:bg-slate-900 flex items-center justify-center hover:scale-105 transition-transform"
       >
-        <img
-          src="../assets/logo.png"
-          alt="SHPE logo"
-          className="h-4 w-4"
-        />
+        <img src="/src/assets/logo.png" alt="SHPE logo" className="h-4 w-4" />
       </button>
 
       {open && (
@@ -175,7 +171,7 @@ export default function ShpeBotWidget() {
           {/* Header */}
           <div className="flex items-center justify-between px-3 py-2 border-b border-slate-200 dark:border-slate-800">
             <div className="flex items-center gap-2">
-              <img src="/favicon.ico" alt="SHPE" className="w-6 h-6" />
+              <img src="/logo.ico" alt="SHPE" className="w-4 h-4" />
               <span className="text-sm font-semibold text-slate-900 dark:text-slate-100">SHPEbot</span>
             </div>
             <div className="flex items-center gap-2">
@@ -219,7 +215,7 @@ export default function ShpeBotWidget() {
             ))}
             {busy && (
               <div className="flex justify-start">
-                <BotBubble>Typing…</BotBubble>
+                <BotBubble>Thinking…</BotBubble>
               </div>
             )}
           </div>
@@ -233,7 +229,7 @@ export default function ShpeBotWidget() {
             className="px-3 py-3 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900"
           >
             <label htmlFor="shpebot-input" className="sr-only">
-              Type your question
+              Ask me any questions about Shpe!
             </label>
             <div className="flex items-center gap-2">
               <input
