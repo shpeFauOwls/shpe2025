@@ -108,26 +108,6 @@ const Gallery = () => {
             ))}
           </div>
         </Section>
-        
-        {/* Call to Action */}
-        <Section>
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Share Your Photos
-            </h2>
-            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Have photos from SHPE FAU events? We'd love to see them! Submit your photos to be featured in our gallery.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-primary">
-                Submit Photos
-              </button>
-              <button className="btn-secondary">
-                View All Albums
-              </button>
-            </div>
-          </div>
-        </Section>
       </main>
       <Footer />
     </div>
