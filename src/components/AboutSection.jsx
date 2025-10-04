@@ -5,18 +5,18 @@ const AboutSection = () => {
   const features = [
     {
       icon: '🎓',
-      title: 'Academic Excellence',
-      description: 'Supporting our members in achieving academic success through tutoring, study groups, and mentorship programs.'
+      title: 'InternSHPE',
+      description: 'The InternSHPE program supports the internship experience for SHPE members at our corporate partners through intentional programming designed to ensure that interns are successful from the first day of their internship.'
     },
     {
       icon: '💼',
-      title: 'Professional Development',
-      description: 'Connecting students with industry professionals and providing career development opportunities.'
+      title: 'MentorSHPE',
+      description: 'Join the MentorSHPE program to grow your network, gain new knowledge, and build your skills. An opportunity to connect with mentors from our chapter and share ideas.'
     },
     {
       icon: '🤝',
-      title: 'Community Impact',
-      description: 'Making a positive impact in our community through outreach programs and STEM education initiatives.'
+      title: 'LeaderSHPE',
+      description: 'SHPE empowers the Hispanic community to be leaders — in their chapter, their workplace, and their community – providing opportunities for participants to enhance their professional skills and expand their network.'
     }
   ];
   
